@@ -13,7 +13,45 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
 
   const user = await useUser;
 
-  const imagesList:IImage[] = [];
+  const d1 = `"广告标题" : "兰蔻「超修小黑瓶」礼盒"
+<br>"产品名" : "超修小黑瓶"
+<br>"品牌名" : "兰蔻 (LANCÔME)"
+<br>"品类" : "礼盒/护肤品"
+<br>"电商平台" : "京东"
+<br>"媒体平台" : "知乎"
+<br>"电商活动" : "京东新品"`
+  const d2 = `广告标题： 今天这价格？有点厉害了[机智]
+<br>产品名：
+<br>&nbsp;&nbsp;第三代美白奶罐
+<br>&nbsp;&nbsp;第三代山参胶原霜
+<br>&nbsp;&nbsp;淡斑精华
+<br>&nbsp;&nbsp;光感水
+<br>&nbsp;&nbsp;美白奶罐
+<br>品牌名： 谷雨
+<br>品类： 护肤品（美白、抗衰老）
+<br>电商平台： 京东
+<br>媒体平台： 无
+<br>电商活动： 直播间领券下单立减30元，入会买1到手7件`
+const d3 = `"广告标题" : "全网热销200万台",
+<br>"产品名" : "弱水时砂",
+<br>"品牌名" : "弱水时砂/ROSESELSA",
+<br>"品类" : "耳机",
+<br>"电商平台" : "京东",
+<br>"媒体平台" : "分众电梯海报",
+<br>"电商活动" : "无",`
+  const imagesList:IImage[] = [{
+    keys: "keys",
+    imgurl: "https://img.askpic.com/1741014002310-812.jpg",
+    description: d1
+},{
+  keys: "keys",
+  imgurl: "https://img.askpic.com/1741096972510-141.jpg",
+  description: d2
+},{
+  keys: "keys",
+  imgurl: "https://img.askpic.com/1741098384574-231.jpg",
+  description: d3
+}];
 
   const fqas = [
     {
@@ -58,7 +96,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
                   <img className="rounded-t-lg" src={image.imgurl} alt={image.keys}/>
                 </a>
                 <div className="p-5">
-                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{image.description}</p>
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400"><div dangerouslySetInnerHTML={{ __html: image.description }} /></p>
                 </div>
               </div>
             ))
