@@ -34,9 +34,9 @@ export default async function Page({ params: { lang } }: { params: { lang: Local
                 <p className="sm:text-sm text-gray-600 dark:text-gray-400"> <a href="mailto:kevin@roleplex.com">kevin@roleplex.com</a> </p>
               </div>
             </div>
-            <div className="w-full rounded-md bg-white dark:bg-gray-900 max-[991px]:h-[475px] lg:w-2/5">
+            {/* <div className="w-full rounded-md bg-white dark:bg-gray-900 max-[991px]:h-[475px] lg:w-2/5">
               <img alt="aitools" src="/assets/aitools.jpg" />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

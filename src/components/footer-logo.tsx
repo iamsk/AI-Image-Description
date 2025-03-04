@@ -21,7 +21,7 @@ export default function FooterLogo({ lang, dictionary }: { lang: Locale, diction
                                 <a href={`/${lang}/contact`} className="hover:underline">Contact Us</a>
                             </li>
                             <li className='mb-4'>
-                                <a href="mailto:kevin@roleplex.com" className="hover:underline" title='Send an email to AI Ask Pic: Free online describe image, Text Extraction & Code Conversion'>Email</a>
+                                <a href="mailto:kevin@roleplex.com" className="hover:underline" title='Send an email to AI AskPic: Free online describe image, Text Extraction & Code Conversion'>Email</a>
                             </li>
                             <li>
                             <a href='https://discord.gg/e4Q4NkQf' className="hover:underline">Discord</a>

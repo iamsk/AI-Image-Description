@@ -83,16 +83,16 @@ export default function UploadForm({ lang, dictionary }: { lang: Locale, diction
 
                 <p className="mb-5 text-lg font-normal text-gray-500 lg:text-1xl sm:px-16 xl:px-28 dark:text-gray-400">{dictionary.subtitle}</p>
 
-                {userId && <div className="items-center justify-between py-2 px-4 mb-4 rounded-lg text-blue-700 bg-blue-100 dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800">
+                {/* {userId && <div className="items-center justify-between py-2 px-4 mb-4 rounded-lg text-blue-700 bg-blue-100 dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800">
                     <p className="text-sm font-semibold text-blue-700  dark:text-white dark:decoration-white decoration-blue-500">{dictionary.credits_label}</p>
                     </div>
-                }
+                } */}
                 <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:px-16 xl:px-28">
 
                     <div className="col-span-full">
                         <label htmlFor="cover-photo" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{dictionary.func_image_label}</label>
                         <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 dark:border-gray-400">
-                            <ImagePicker onImageSelected={handleImageSelected}/>
+                            {/* <ImagePicker onImageSelected={handleImageSelected}/> */}
                         </div>
                     </div>
                     <div className="col-span-full">

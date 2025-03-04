@@ -34,7 +34,7 @@ export default async function page({ params: { lang } }: { params: { lang: Local
                 </span>
             </h3>
             <h3  className="inline-flex justify-between items-center py-2 px-2 pe-4 rounded-xl md:py-1 md:px-1 mb-7 text-sm text-blue-700 bg-blue-100 md:rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800">
-                <span className="text-sm font-medium"> {dictionary.pricing.payment_tips1}<a href={`/${lang}/contact`} className="font-semibold text-blue-700 underline dark:text-white dark:decoration-white decoration-blue-500">{dictionary.pricing.ko_fi_tips2}</a> )</span> 
+                <span className="text-sm font-medium"> {dictionary.pricing.ko_fi_tips1}<a href={`/${lang}/contact`} className="font-semibold text-blue-700 underline dark:text-white dark:decoration-white decoration-blue-500">{dictionary.pricing.ko_fi_tips2}</a> )</span> 
             </h3>
             <h3 className="text-sm font-bold dark:text-white sm:px-16 xl:px-48">
                
