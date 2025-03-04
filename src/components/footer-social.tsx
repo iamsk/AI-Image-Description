@@ -56,9 +56,9 @@ export default function FooterSocial({ lang, dictionary }: { lang: Locale, dicti
                     <div>
                         <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">HELP AND SUPPORT</h2>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                            <li className="mb-4">
+                            {/* <li className="mb-4">
                                 <a href={`/${lang}/contact`} className="hover:underline">Contact Us</a>
-                            </li>
+                            </li> */}
                             <li className='mb-4'>
                                 <a href="mailto:kevin@roleplex.com" className="hover:underline" title='Send an email to AskPic: Free online describe image, Text Extraction & Code Conversion'>Email</a>
                             </li>

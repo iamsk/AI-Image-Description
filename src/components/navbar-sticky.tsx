@@ -81,9 +81,9 @@ export default function NavbarSticky({ lang, dictionary }: Props) {
                             <span className='bg-blue-100 text-slate-500 hover:text-blue-800 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 text-1xl font-semibold me-2 px-4 py-2 rounded dark:bg-blue-200 dark:text-blue-800 ms-2'>credits:{value}</span>
                         </div>
                     }
-                    <div className="hidden md:inline-flex font-medium items-center justify-between ">
+                    {/* <div className="hidden md:inline-flex font-medium items-center justify-between ">
                         <a href={`/${lang}/contact`} className="inline-flex text-sm  sm:px-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">{dictionary.navbar.contact}</a>
-                    </div>
+                    </div> */}
 
                     <LanguageSwitcher lang={lang} userAgent='desktop' dictionary={dictionary['navbar']} />
 
