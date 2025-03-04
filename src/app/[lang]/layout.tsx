@@ -19,17 +19,17 @@ export async function generateStaticParams() {
     return i18n.locales.map((locale) => ({ lang: locale }));
 }
 export const metadata: Metadata = {
-    title: "Free ai image description generator - 100% Free, No Login",
+    title: "Ask Picture with Free AI - 100% Free, No Login",
     description: "Exploring the Mysteries Behind the Image Using an AI Image Description Generator Tool.",
     twitter: {
-        card: "summary_large_image", title: "Free ai image description generator - 100% Free, No Login",
+        card: "summary_large_image", title: "Ask Picture with Free AI - 100% Free, No Login",
         description: "Exploring the Mysteries Behind the Image Using an AI Image Description Generator Tool.",
         images: ["https://imagedescriptiongenerator.xyz/assets/og-explore.png"]
     },
     openGraph: {
         type: "website",
         url: "https://imagedescriptiongenerator.xyz",
-        title: "Free ai image description generator - 100% Free, No Login",
+        title: "Ask Picture with Free AI - 100% Free, No Login",
         description: "Exploring the Mysteries Behind the Image Using an AI Image Description Generator Tool.",
         siteName: "imagetodescription.ai",
         images: [{

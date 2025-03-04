@@ -20,7 +20,7 @@ export default function UploadForm({ lang, dictionary }: { lang: Locale, diction
 
     const formRef = useRef<HTMLFormElement | null>(null);
     const [imageDesc, setImageDesc] = useState<string>('');
-    
+
     const dialogRef = useRef<DialogRef | null>(null);
     const { setValue } = useContext(NavContext);
     const { userId } = useAuth();
@@ -31,7 +31,7 @@ export default function UploadForm({ lang, dictionary }: { lang: Locale, diction
     };
 
     async function formAction(formData: FormData) {
-       
+
         formData.set("lang", lang);
         const it = streamingFetch(`/api/home`, {
             method: 'POST',
@@ -64,7 +64,7 @@ export default function UploadForm({ lang, dictionary }: { lang: Locale, diction
         }
 
         formRef.current?.reset();
-       
+
 
         function setErrorTips(error: string = "please select image") {
             setImageDesc('');
@@ -88,7 +88,7 @@ export default function UploadForm({ lang, dictionary }: { lang: Locale, diction
                     </div>
                 }
                 <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:px-16 xl:px-28">
-              
+
                     <div className="col-span-full">
                         <label htmlFor="cover-photo" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{dictionary.func_image_label}</label>
                         <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 dark:border-gray-400">
@@ -99,14 +99,14 @@ export default function UploadForm({ lang, dictionary }: { lang: Locale, diction
                         <label htmlFor="des" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{dictionary.func_text_label}</label>
                         <div className="mt-2">
 
-                            
-                            <ReactMarkdown components={defaultComponents} skipHtml={true} className={`${imageDesc === '' ? 'text-gray-400 dark:text-gray-400' : 'text-gray-900 dark:text-white'} max-h-[160px] min-h-[160px] overflow-y-auto not-prose block w-full p-2.5 text-sm bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-900 dark:border-gray-600   dark:focus:ring-blue-500 dark:focus:border-blue-500`}>
+
+                            <ReactMarkdown components={defaultComponents} skipHtml={true} className={`${imageDesc === '' ? 'text-gray-400 dark:text-gray-400' : 'text-gray-900 dark:text-white'} max-h-[180px] min-h-[180px] overflow-y-auto not-prose block w-full p-2.5 text-sm bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-900 dark:border-gray-600   dark:focus:ring-blue-500 dark:focus:border-blue-500`}>
                                 {imageDesc === '' ? `${dictionary.func_text_placeholder}` : imageDesc}
                             </ReactMarkdown>
-                            {/* 
+                            {/*
                                     <textarea id="des" data-provide="markdown" name="des" rows={6} value={imageDesc} placeholder={dictionary.func_text_placeholder}
                                         className="block w-full rounded-md border-0 px-1.5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                        
+
                                     </textarea>
                                     */}
                         </div>
@@ -117,9 +117,8 @@ export default function UploadForm({ lang, dictionary }: { lang: Locale, diction
                             </div>
                             <label htmlFor="public" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{dictionary.public_label}</label>
                         </div>
-                        <p className="mt-5 text-sm leading-6 text-gray-600 dark:text-gray-400">{dictionary.donation_about}☕😊&nbsp;&nbsp;&nbsp;&nbsp;<a className="text-sm underline font-bold text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200" href="https://ko-fi.com/imgdesgen">{dictionary.donation_label}</a> ☕️</p>
                     </div>
-                    
+
                     <div className="flex col-span-full justify-center items-center w-full">
                         <SubmitLoading dictionary={dictionary} />
                     </div>

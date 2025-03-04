@@ -21,14 +21,14 @@ export default function FooterLogo({ lang, dictionary }: { lang: Locale, diction
                                 <a href={`/${lang}/contact`} className="hover:underline">Contact Us</a>
                             </li>
                             <li className='mb-4'>
-                                <a href="mailto:imgdesgen@gmail.com" className="hover:underline" title='Send an email to AI Image Description Generator: Free online describe image, Text Extraction & Code Conversion'>Email</a>
+                                <a href="mailto:kevin@roleplex.com" className="hover:underline" title='Send an email to AI Ask Pic: Free online describe image, Text Extraction & Code Conversion'>Email</a>
                             </li>
                             <li>
                             <a href='https://discord.gg/e4Q4NkQf' className="hover:underline">Discord</a>
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    {/* <div>
                         <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
                             <li className="mb-4">
@@ -41,8 +41,8 @@ export default function FooterLogo({ lang, dictionary }: { lang: Locale, diction
                                 <a href="https://www.producthunt.com/products/imageai-fq#imageai-qa" className="hover:underline">Product Hunt</a>
                             </li>
                         </ul>
-                    </div>
-                    <div>
+                    </div> */}
+                    {/* <div>
                         <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
                             <li className="mb-4">
@@ -52,7 +52,7 @@ export default function FooterLogo({ lang, dictionary }: { lang: Locale, diction
                                 <a href="/en/terms-of-services" className="hover:underline">Terms of Use</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
 
                 <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
