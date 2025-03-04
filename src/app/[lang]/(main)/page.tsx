@@ -118,7 +118,7 @@ const d3 = `"广告标题" : "全网热销200万台",
             <FQAPage list={rightFqas} />
           </div>
           <p className=" mt-10 text-center dark:text-gray-400">{dictionary.index.fqa_note_label}
-            <Link href={`${lang}/contact`} className="font-bold dark:text-gray-400 underline text-gray-800 hover:text-gray-900  dark:hover:text-gray-200"> {dictionary.index.fqa_link_label}</Link>.
+            <Link href="mailto:kevin@roleplex.com" className="font-bold dark:text-gray-400 underline text-gray-800 hover:text-gray-900  dark:hover:text-gray-200"> {dictionary.index.fqa_link_label}</Link>.
           </p>
         </div>
       </section>
