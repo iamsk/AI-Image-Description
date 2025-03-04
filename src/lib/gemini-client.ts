@@ -1,6 +1,7 @@
 import 'server-only'
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold, GenerateContentStreamResult} from "@google/generative-ai";
 import { Response } from "../types/responses";
+import { languagesKVm } from "@/i18n-config";
 const MODEL_NAME = "gemini-1.5-pro-latest";
 const API_KEY = process.env.GOOGLE_GEMINI_API_KEY as string;
 
@@ -79,7 +80,7 @@ export async function runChatFromGeminiStreamResult(base64Image: string, lang: s
       const genAI = new GoogleGenerativeAI(API_KEY);
       const model = genAI.getGenerativeModel(MODEL_PARAMs, REQUEST_OPTIONS);
 
-      const prompt = lang;
+      const prompt = "Reply in " + (languagesKVm.get(lang) || "");
       const image = {
         inlineData: {
           data: base64Image,
@@ -92,5 +93,3 @@ export async function runChatFromGeminiStreamResult(base64Image: string, lang: s
   }
 
 }
-
-

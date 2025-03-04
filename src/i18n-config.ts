@@ -20,6 +20,16 @@ export const languagesKV = {
   ko: "한국어",
 };
 
+export const languagesKVm = new Map<string, string>([
+  ["en", "English"],
+  ["ja", "日本語"],
+  ["zh", "中文"],
+  ["de", "Deutsch"],
+  ["es", "Español"],
+  ["fr", "Français"],
+  ["ko", "한국어"],
+]);
+
 export const i18n = {
     defaultLocale: "en",
     locales: languages.map(({ locale }) => locale),

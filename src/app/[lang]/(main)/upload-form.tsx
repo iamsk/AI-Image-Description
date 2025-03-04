@@ -25,7 +25,7 @@ export default function UploadForm({ lang, dictionary }: { lang: Locale, diction
     const { setValue } = useContext(NavContext);
     const { userId } = useAuth();
 
-    const handleImageSelected = (selectedImage: string | null) => {
+    const handleImageSelected = (selectedImage: File | null) => {
         //console.log('Image selected:', selectedImage);
         setImageDesc('');
     };
@@ -92,7 +92,7 @@ export default function UploadForm({ lang, dictionary }: { lang: Locale, diction
                     <div className="col-span-full">
                         <label htmlFor="cover-photo" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{dictionary.func_image_label}</label>
                         <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 dark:border-gray-400">
-                            {/* <ImagePicker onImageSelected={handleImageSelected}/> */}
+                            <ImagePicker onImageSelected={handleImageSelected} member={false}/>
                         </div>
                     </div>
                     <div className="col-span-full">
